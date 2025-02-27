@@ -186,6 +186,7 @@ a.ctaJovem {
   padding: 10px 30px;
   border-radius: 30px;
   margin-top: 30px;
+  font-weight: bold;
 }
 
 .sobre__content {
@@ -262,7 +263,18 @@ section.sobre {
   justify-content: space-around;
 }
 
-.depoimentos__container__depoimento {width: 32%;background: #08503b;color: white;padding: 40px 20px;border-radius: 20px;display: flex;flex-direction: column;align-items: center;justify-content: space-between;text-align: center;}
+.depoimentos__container__depoimento {
+  width: 32%;
+  background: #08503b;
+  color: white;
+  padding: 40px 20px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+}
 
 .depoimentos__container__depoimento:nth-child(even) {
   background: #a9bf3e;
@@ -317,4 +329,67 @@ span.nomeDepoimento {
 .valores__container__valor h3 {
   margin-bottom: 10px;
   min-height: 60px;
+}
+
+.valorParcela {
+  font-size: 2em;
+  padding-right: 22px;
+}
+
+.valorParcela span {
+  font-size: 12px;
+}
+
+section#garantia {
+  text-align: center;
+}
+
+@media only screen and (max-width: 768px) {
+  .sobre__content {
+    flex-wrap: wrap;
+  }
+
+  .sobre__content__img {
+    width: 100%;
+  }
+
+  .sobre__content__text {
+    width: 100%;
+    padding-top: 20px;
+  }
+
+  .beneficios__container {
+    flex-wrap: wrap;
+  }
+
+  .beneficios__container__beneficio {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .sobre__content__img {
+    order: -1;
+  }
+
+  .depoimentos__container__depoimento img {
+    display: none !important;
+  }
+
+  .depoimentos__container {
+    flex-wrap: wrap;
+  }
+
+  .depoimentos__container__depoimento {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .valores__container {
+    flex-wrap: wrap;
+  }
+
+  .valores__container__valor {
+    width: 100%;
+    margin-bottom: 20px;
+  }
 }
